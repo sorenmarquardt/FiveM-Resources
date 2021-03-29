@@ -373,7 +373,7 @@ function setCount(item) {
 
     if (item.type === "item_account" || item.type === "item_money") {
         //count = "€" + formatMoney(item.count);
-		count = formatMoney(item.count);
+		count = (item.count);
 	}
 
     return count;
@@ -402,7 +402,7 @@ function setCost(item) {
 //}
 
 function formatMoney(number) {
-	return number.toLocaleString('nl-NL', { style: 'currency', currency: 'EUR' });
+	return number.toLocaleString('da-DK', { style: 'currency', currency: 'Dk' });
 }
 
 //USD FORMAT BELOW HERE

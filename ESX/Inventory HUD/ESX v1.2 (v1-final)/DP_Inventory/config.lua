@@ -1,6 +1,6 @@
 Config = {}
-Config.ServerName = 'Zeestad'
-Config.Locale = 'nl' -- Currently supported: nl, en, tr, fr, br, de, fa, pt, es. Your translation file is really appreciated. Send it to our Github repo or Discord server.
+Config.ServerName = ''
+Config.Locale = 'da' -- Currently supported: nl, en, tr, fr, br, de, fa, pt, es. Your translation file is really appreciated. Send it to our Github repo or Discord server.
 Config.ExcludeAccountsList = {'bank', 'money'} -- DO NOT TOUCH!
 
 Config.IncludeCash = true -- Include cash in inventory? true or false.
@@ -21,7 +21,7 @@ Config.UseLicense = false -- You must have esx_license working on your server.
 Config.useAdvancedShop = false -- es_extended shop system. Not shared, sorry. Just set to false and use the in-build custom shop.
 Config.disableVersionCheck = false
 Config.disableVersionMessage = false
-Config.versionCheckDelay = 10 -- In minutes
+Config.versionCheckDelay = 20 -- In minutes
 
 Config.Command = {Steal = 'steal', CloseInv = 'closeinventory', Unequip = 'unequip'} -- NOT YET SUPPORTED, CHANGE IN /server/main.lua/.
 Config.Attachments = {'flashlight', 'mag', 'drummag', 'suppressor', 'scope', 'grip', 'skin', 'skin1', 'skin2', 'skin3', 'skin4', 'skin5', 'skin6','skin7'} -- SUPPORTED.
@@ -119,9 +119,9 @@ Config.LockerRentBlipColor = 3
 
 Config.Weight = 80 -- Limit, unit can be whatever you want. Originally grams (as average people can hold 25kg).
 Config.DefaultWeight = 1 -- Default weight for an item.
-Config.MaxBagWeight = 20
+Config.MaxBagWeight = 150
 Config.MaxBagItemCount = 50 
-Config.MaxDifferentBagItems = 5
+Config.MaxDifferentBagItems = 7
 
 Config.localWeight = { -- Fill this with all your items. This is only for trunk and glovebox! Change your pocket inventory weights in your database! (items table)
 	bread = 1,

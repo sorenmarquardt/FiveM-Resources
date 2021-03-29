@@ -115,7 +115,7 @@ function LockerMenu(k, hasLocker, lockerName)
 	end
 	
 	if not hasLocker then
-		table.insert(elements, {label = "Huur | Gemiddelde kosten: <span style='color: green;'>€" .. ESX.Math.GroupDigits(Config.InitialLockerRentPrice) .. "</span> | Dagelijks - <span style='color: green;'>€" .. ESX.Math.GroupDigits(Config.DailyLockerRentPrice) .. "</span>", value = 'start_locker'})
+		table.insert(elements, {label = "Huur | Gemiddelde kosten: <span style='color: green;'>" .. ESX.Math.GroupDigits(Config.InitialLockerRentPrice) .. "</span> | Dagelijks - <span style='color: green;'>" .. ESX.Math.GroupDigits(Config.DailyLockerRentPrice) .. "</span>", value = 'start_locker'})
 	end
 	
 	ESX.UI.Menu.CloseAll()

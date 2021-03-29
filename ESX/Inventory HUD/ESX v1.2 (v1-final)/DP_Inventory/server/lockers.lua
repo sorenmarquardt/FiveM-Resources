@@ -29,7 +29,7 @@ AddEventHandler('DP_Inventory:startRentingLocker', function(lockerId, lockerName
 				TriggerClientEvent('tnotify:client:SendTextAlert', _source, {
 					style  =  'success',
 					duration  =  5500,
-					message = 'Je huurt nu kluis ' ..lockerName.. '. Dat kost dan €'..Config.DailyRentPrice..' dagelijks (IRL)',
+					message = 'Je huurt nu kluis ' ..lockerName.. '. Dat kost dan '..Config.DailyRentPrice..' dagelijks (IRL)',
 					sound  =  true
 				})
 			else
@@ -85,7 +85,7 @@ function PayLockerRent(d, h, m)
 			local xPlayer = ESX.GetPlayerFromIdentifier(result[i].owner)
 			if xPlayer then
 				xPlayer.removeAccountMoney('bank', Config.DailyLockerRentPrice)
-				TriggerClientEvent('mythic_notify:client:SendAlert', xPlayer.source, { type = 'inform', text = 'Je betaalde €'..Config.DailyLockerRentPrice..' voor de verhuur van kluisjes.', length = 8000 })
+				TriggerClientEvent('mythic_notify:client:SendAlert', xPlayer.source, { type = 'inform', text = 'Je betaalde '..Config.DailyLockerRentPrice..' voor de verhuur van kluisjes.', length = 8000 })
 			else
 				if oldESX then
 					MySQL.Sync.execute('UPDATE users SET bank = bank - @bank WHERE owner = @identifier', { ['@bank'] = Config.DailyLockerRentPrice, ['@identifier'] = owner })

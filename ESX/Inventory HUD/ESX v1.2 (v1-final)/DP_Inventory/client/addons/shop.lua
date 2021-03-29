@@ -692,7 +692,7 @@ function OpenBuyLicenseMenu()
 	ESX.UI.Menu.Open('default', GetCurrentResourceName(), 'shop_license',{
 	title = _U('license_shop_title'),
 		elements = {
-			{ label = _U('yes') ..' (€' .. Config.LicensePrice ..')', value = 'yes' },
+			{ label = _U('yes') ..' (' .. Config.LicensePrice ..')', value = 'yes' },
 			{ label = _U('no'), value = 'no' },
 		}
 	},
